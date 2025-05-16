@@ -8,21 +8,22 @@
 /* Estilo geral do corpo */
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, rgba(255, 0, 0, 0.5), rgba(255, 100, 100, 0.5)), url('https://via.placeholder.com/1500x800'); /* Degrade com imagem de fundo */
+  background: linear-gradient(135deg, rgba(255, 0, 0, 0.6), rgba(255, 100, 100, 0.6)), url('https://via.placeholder.com/1500x800'); /* Degrade com imagem de fundo */
   background-size: cover;
   background-position: center;
   color: #fff;
   line-height: 1.6;
-  margin-top: 30px;
-  backdrop-filter: blur(8px); /* Adiciona o efeito de desfoque */
+  margin-top: 50px; /* Ajusta a margem superior */
+  backdrop-filter: blur(5px); /* Adiciona o efeito de desfoque */
 }
 
+/* Barra de navegação superior */
 header {
-  background-color: rgba(255, 0, 0, 0.8); /* Vermelho transparente */
+  background-color: rgba(255, 0, 0, 0.9); /* Vermelho forte */
   color: #fff;
   padding: 20px 0;
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   position: fixed;
   width: 100%;
   top: 0;
@@ -33,6 +34,7 @@ header {
 
 header nav ul {
   list-style-type: none;
+  padding: 0;
 }
 
 header nav ul li {
@@ -93,6 +95,7 @@ header nav ul li a:hover {
 
 .video-card iframe {
   border-radius: 10px;
+  max-width: 100%; /* Garante que o vídeo ocupe toda a largura disponível */
 }
 
 /* Estilo dos botões */
@@ -123,7 +126,7 @@ header nav ul li a:hover {
 footer {
   text-align: center;
   padding: 20px;
-  background-color: rgba(255, 0, 0, 0.8); /* Vermelho transparente */
+  background-color: rgba(255, 0, 0, 0.9); /* Vermelho forte */
   color: #fff;
   margin-top: 30px;
   font-size: 14px;
