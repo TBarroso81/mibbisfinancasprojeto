@@ -8,18 +8,27 @@
 /* Estilo geral do corpo */
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #f7f7f7;
-  color: #333;
+  background: linear-gradient(135deg, rgba(255, 0, 0, 0.5), rgba(255, 100, 100, 0.5)), url('https://via.placeholder.com/1500x800'); /* Degrade com imagem de fundo */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
   line-height: 1.6;
   margin-top: 30px;
+  backdrop-filter: blur(8px); /* Adiciona o efeito de desfoque */
 }
 
 header {
-  background-color: #1e3d58;
+  background-color: rgba(255, 0, 0, 0.8); /* Vermelho transparente */
   color: #fff;
   padding: 20px 0;
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
 }
 
 header nav ul {
@@ -36,19 +45,20 @@ header nav ul li a {
   text-decoration: none;
   font-weight: 600;
   font-size: 18px;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 header nav ul li a:hover {
   color: #f4a261;
+  transform: scale(1.1);
 }
 
 /* Seções do site */
 .section {
   padding: 40px 20px;
-  margin: 20px auto;
+  margin: 120px auto 20px; /* Ajusta a margem para dar espaço à barra fixa */
   max-width: 900px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9); /* Fundo transparente */
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
@@ -61,7 +71,7 @@ header nav ul li a:hover {
 .section-title {
   font-size: 28px;
   font-weight: 600;
-  color: #1e3d58;
+  color: #e74c3c; /* Vermelho suave */
   margin-bottom: 20px;
   text-align: center;
   transition: color 0.3s ease;
@@ -88,7 +98,7 @@ header nav ul li a:hover {
 /* Estilo dos botões */
 .btn {
   display: inline-block;
-  background-color: #1e3d58;
+  background-color: #e74c3c; /* Vermelho */
   color: #fff;
   padding: 12px 20px;
   font-size: 16px;
@@ -106,14 +116,14 @@ header nav ul li a:hover {
 }
 
 .btn:hover {
-  background-color: #153e59;
+  background-color: #c0392b; /* Vermelho mais escuro */
   transform: scale(1.05);
 }
 
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #1e3d58;
+  background-color: rgba(255, 0, 0, 0.8); /* Vermelho transparente */
   color: #fff;
   margin-top: 30px;
   font-size: 14px;
